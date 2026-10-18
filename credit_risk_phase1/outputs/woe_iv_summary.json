@@ -1,0 +1,267 @@
+{
+  "data_origin": "Home Credit public sample, not bank internal data",
+  "sample_size": 307511,
+  "total_numeric_features_analyzed": 108,
+  "n_woe_bins": 449,
+  "overall_target_rate": 0.08072881945686496,
+  "two_way_groups": 16,
+  "three_way_groups": 48,
+  "three_way_groups_min500": 36,
+  "candidate_high_risk_groups": 10,
+  "top_iv": [
+    {
+      "feature": "EXT_SOURCE_3",
+      "iv": 0.3095229499038846,
+      "missing_rate": 0.19825307062186392,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "EXT_SOURCE_2",
+      "iv": 0.2807972170268005,
+      "missing_rate": 0.0021462646864665006,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "EXT_SOURCE_1",
+      "iv": 0.14141622692113442,
+      "missing_rate": 0.5638107254699832,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "DAYS_EMPLOYED",
+      "iv": 0.10735524953820991,
+      "missing_rate": 0.18007160719453938,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "EMPLOYMENT_YEARS",
+      "iv": 0.10727315860384967,
+      "missing_rate": 0.18007160719453938,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "DAYS_BIRTH",
+      "iv": 0.08206715901781034,
+      "missing_rate": 0.0,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "AGE_YEARS",
+      "iv": 0.08206403162976232,
+      "missing_rate": 0.0,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "REGION_RATING_CLIENT_W_CITY",
+      "iv": 0.05118774644757461,
+      "missing_rate": 0.0,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "REGION_RATING_CLIENT",
+      "iv": 0.04830197695840551,
+      "missing_rate": 0.0,
+      "small_bin_count": 0
+    },
+    {
+      "feature": "DAYS_LAST_PHONE_CHANGE",
+      "iv": 0.04418807098578931,
+      "missing_rate": 3.2519161916159095e-06,
+      "small_bin_count": 1
+    },
+    {
+      "feature": "AMT_GOODS_PRICE",
+      "iv": 0.042830498995054665,
+      "missing_rate": 0.0009040327012692228,
+      "small_bin_count": 1
+    },
+    {
+      "feature": "FLOORSMAX_AVG",
+      "iv": 0.037843366574779574,
+      "missing_rate": 0.4976082156410665,
+      "small_bin_count": 0
+    }
+  ],
+  "selected_iv": [
+    {
+      "feature": "EXT_SOURCE_3",
+      "rank": 1,
+      "iv": 0.3095229499038846
+    },
+    {
+      "feature": "EXT_SOURCE_2",
+      "rank": 2,
+      "iv": 0.2807972170268005
+    },
+    {
+      "feature": "AGE_YEARS",
+      "rank": 7,
+      "iv": 0.08206403162976232
+    },
+    {
+      "feature": "AMT_CREDIT",
+      "rank": 17,
+      "iv": 0.03556966146404089
+    },
+    {
+      "feature": "AMT_INCOME_TOTAL",
+      "rank": 76,
+      "iv": 0.009518108128231133
+    },
+    {
+      "feature": "CREDIT_INCOME_RATIO",
+      "rank": 77,
+      "iv": 0.008162802377987203
+    }
+  ],
+  "candidate_examples": [
+    {
+      "EXT_SOURCE_2": "E2:Low",
+      "EXT_SOURCE_3": "E3:Low",
+      "CREDIT_INCOME_RATIO": "CIR:Middle",
+      "n": 9454,
+      "positives": 2392,
+      "rate": 0.25301459699598056,
+      "share": 0.03074361567553681,
+      "uplift": 3.1341297779186696,
+      "wilson_lower_95": 0.24435263307088,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Low",
+      "EXT_SOURCE_3": "E3:Low",
+      "CREDIT_INCOME_RATIO": "CIR:High",
+      "n": 3418,
+      "positives": 766,
+      "rate": 0.22410766530134582,
+      "share": 0.01111504954294318,
+      "uplift": 2.77605527752194,
+      "wilson_lower_95": 0.21044207708792712,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Low",
+      "EXT_SOURCE_3": "E3:Low",
+      "CREDIT_INCOME_RATIO": "CIR:Low",
+      "n": 5081,
+      "positives": 1070,
+      "rate": 0.21058846683723675,
+      "share": 0.016522986169600438,
+      "uplift": 2.608590937586526,
+      "wilson_lower_95": 0.19959806176268716,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Low",
+      "EXT_SOURCE_3": "E3:Missing",
+      "CREDIT_INCOME_RATIO": "CIR:Middle",
+      "n": 8830,
+      "positives": 1519,
+      "rate": 0.17202718006795018,
+      "share": 0.028714419971968483,
+      "uplift": 2.130926492240702,
+      "wilson_lower_95": 0.16429827678643932,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Low",
+      "EXT_SOURCE_3": "E3:Missing",
+      "CREDIT_INCOME_RATIO": "CIR:High",
+      "n": 4236,
+      "positives": 643,
+      "rate": 0.15179414542020775,
+      "share": 0.013775116987684993,
+      "uplift": 1.8802968560851363,
+      "wilson_lower_95": 0.14130415146363048,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Low",
+      "EXT_SOURCE_3": "E3:Missing",
+      "CREDIT_INCOME_RATIO": "CIR:Low",
+      "n": 4219,
+      "positives": 622,
+      "rate": 0.14742830054515288,
+      "share": 0.013719834412427523,
+      "uplift": 1.8262164805212693,
+      "wilson_lower_95": 0.13705098649746472,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Middle",
+      "EXT_SOURCE_3": "E3:Low",
+      "CREDIT_INCOME_RATIO": "CIR:Middle",
+      "n": 16115,
+      "positives": 2273,
+      "rate": 0.1410487123797704,
+      "share": 0.052404629427890384,
+      "uplift": 1.7471915646572236,
+      "wilson_lower_95": 0.1357600711241709,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Middle",
+      "EXT_SOURCE_3": "E3:Low",
+      "CREDIT_INCOME_RATIO": "CIR:High",
+      "n": 6168,
+      "positives": 777,
+      "rate": 0.1259727626459144,
+      "share": 0.02005781906988693,
+      "uplift": 1.560443513152378,
+      "wilson_lower_95": 0.11792384029022976,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Middle",
+      "EXT_SOURCE_3": "E3:Low",
+      "CREDIT_INCOME_RATIO": "CIR:Low",
+      "n": 9040,
+      "positives": 1072,
+      "rate": 0.11858407079646018,
+      "share": 0.029397322372207824,
+      "uplift": 1.4689186785373722,
+      "wilson_lower_95": 0.11208091168676092,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    },
+    {
+      "EXT_SOURCE_2": "E2:Low",
+      "EXT_SOURCE_3": "E3:Middle",
+      "CREDIT_INCOME_RATIO": "CIR:Middle",
+      "n": 14310,
+      "positives": 1670,
+      "rate": 0.116701607267645,
+      "share": 0.04653492070202367,
+      "uplift": 1.4456003203416228,
+      "wilson_lower_95": 0.11154366177684738,
+      "min_n_pass": true,
+      "candidate_signal": true,
+      "comparison": "full sample, exploratory only"
+    }
+  ],
+  "thresholds": {
+    "min_group_size": 500,
+    "min_risk_uplift": 1.4,
+    "wilson_95_lower_above_overall": true,
+    "smoothing": 0.5,
+    "quantile_bins": 5,
+    "cross_p25_p75": true
+  }
+}

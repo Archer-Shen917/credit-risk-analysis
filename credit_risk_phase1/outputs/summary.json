@@ -1,0 +1,40 @@
+{
+  "input_name": "application_train.csv",
+  "dataset": "Home Credit Default Risk - public competition, not HSBC data",
+  "sample_count": 307511,
+  "field_count": 122,
+  "positive_count": 24825,
+  "positive_rate": 0.08072881945686496,
+  "negative_count": 282686,
+  "target_values": {
+    "0": 282686,
+    "1": 24825
+  },
+  "target_missing": 0,
+  "duplicate_ids": 0,
+  "duplicate_rows": 0,
+  "missing_cell_count": 9152465,
+  "missing_cell_rate": 0.24395941907129431,
+  "missing_level_counts": {
+    "中缺失 10%-30%": 7,
+    "低缺失 <10%": 65,
+    "高缺失 >30%": 50
+  },
+  "constant_fields": [],
+  "description_unmatched": [],
+  "positive_income_invalid": 0,
+  "zero_or_negative_credit": 0,
+  "employment_sentinel_365243": 55374,
+  "gender_xna": 4,
+  "age_nonnegative": 0,
+  "birth_age_min": 20.5,
+  "birth_age_max": 69.07,
+  "income_median": 147150.0,
+  "credit_median": 513531.0,
+  "annuity_median": 24903.0,
+  "income_p99": 472500.0,
+  "income_max": 117000000.0,
+  "positive_income_label_1_count": 24825,
+  "income_above_p99_count": 3014,
+  "annuity_missing_count": 12
+}
