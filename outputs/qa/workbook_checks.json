@@ -1,0 +1,9 @@
+{
+  "sheets": 20,
+  "formula_error_matches": 0,
+  "financial_formulas_match_python_outputs": true,
+  "assumption_source_comments": 11,
+  "editable_inputs": "情景假设!B4:B14",
+  "formula_outputs": "收益测算!A4:N6",
+  "source": "outputs/phase4/economic_base_scenario.csv"
+}

@@ -1,0 +1,12 @@
+{
+  "tested_rows": 100,
+  "probabilities_finite_and_bounded": true,
+  "output_columns": [
+    "SK_ID_CURR",
+    "risk_probability",
+    "illustrative_score",
+    "A_conservative",
+    "B_balanced"
+  ],
+  "individual_predictions_saved": false
+}

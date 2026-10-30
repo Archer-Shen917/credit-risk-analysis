@@ -1,0 +1,44 @@
+[
+  {
+    "name": "A_conservative",
+    "lower": 0.05614846145090382,
+    "upper": 0.09848610006275182,
+    "target_rate_cap": 0.04,
+    "cap_met": true,
+    "metadata": {
+      "policy": "A_conservative",
+      "lower": 0.05614846145090382,
+      "upper": 0.09848610006275182,
+      "lower_quantile": 0.49999999999999994,
+      "upper_quantile": 0.75,
+      "auto_approve_share": 0.49996903065964693,
+      "manual_share": 0.24998451532982346,
+      "low_target_rate": 0.03394449950445986,
+      "low_ci_lower": 0.03021049226241194,
+      "low_ci_upper": 0.03812188667724085,
+      "risk_cap": 0.04,
+      "feasible": true
+    }
+  },
+  {
+    "name": "B_balanced",
+    "lower": 0.08687719988197068,
+    "upper": 0.135517139236712,
+    "target_rate_cap": 0.05,
+    "cap_met": true,
+    "metadata": {
+      "policy": "B_balanced",
+      "lower": 0.08687719988197068,
+      "upper": 0.135517139236712,
+      "lower_quantile": 0.7,
+      "upper_quantile": 0.85,
+      "auto_approve_share": 0.699969030659647,
+      "manual_share": 0.15001548467017653,
+      "low_target_rate": 0.04486328643482878,
+      "low_ci_lower": 0.04119893675125644,
+      "low_ci_upper": 0.0488369529627488,
+      "risk_cap": 0.05,
+      "feasible": true
+    }
+  }
+]

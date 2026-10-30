@@ -1,0 +1,18 @@
+2026-10-26 10:27:19,820 INFO Read 307511 rows; splits: [{'partition': 'fit', 'n': 150679, 'positives': 12164, 'target_rate': 0.08072790501662475}, {'partition': 'tune', 'n': 32289, 'positives': 2607, 'target_rate': 0.08073957075164917}, {'partition': 'calibration', 'n': 16144, 'positives': 1303, 'target_rate': 0.08071110009910802}, {'partition': 'policy', 'n': 16145, 'positives': 1303, 'target_rate': 0.08070610096004956}, {'partition': 'test', 'n': 92254, 'positives': 7448, 'target_rate': 0.08073362672621241}]
+2026-10-26 10:27:46,415 INFO WOE screening selected 41 features; C=0.1
+2026-10-26 10:27:46,415 INFO Training R0_baseline
+2026-10-26 10:27:51,942 INFO Training R1_grid_01
+2026-10-26 10:28:00,138 INFO Training R1_grid_02
+2026-10-26 10:28:08,566 INFO Training R1_grid_03
+2026-10-26 10:28:18,407 INFO Training R1_grid_04
+2026-10-26 10:28:25,261 INFO Training R1_grid_05
+2026-10-26 10:28:31,040 INFO Training R1_grid_06
+2026-10-26 10:28:36,037 INFO Training R1_grid_07
+2026-10-26 10:28:40,215 INFO Training R1_grid_08
+2026-10-26 10:28:45,421 INFO Training R2_weight_3.00
+2026-10-26 10:28:47,185 INFO Training R2_weight_11.39
+2026-10-26 10:28:52,057 INFO Training R3_business_interactions
+2026-10-26 10:29:22,375 INFO Frozen winner: R3_business_interactions, tuning AUC 0.73610
+/opt/pyvenv/lib/python3.13/site-packages/pandas/core/nanops.py:1632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+2026-10-26 10:30:45,265 INFO Finished numerical stages in 210.0 seconds

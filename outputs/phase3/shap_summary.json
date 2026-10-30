@@ -1,0 +1,10 @@
+{
+  "global_sample_n": 1500,
+  "sampling": "uniform random holdout sample",
+  "local_cases": 6,
+  "calibrated_additivity_max_error": 2.220446049250313e-15,
+  "baseline_log_odds": -2.7436126960655813,
+  "calibration_slope": 1.0238032712208558,
+  "units": "calibrated log-odds; not percentage-point or causal effects",
+  "tree_dependence": "tree_path_dependent; feature dependence affects attribution"
+}

@@ -1,0 +1,45 @@
+{
+  "input_filename": "application_train.csv",
+  "input_sha256": "52e96b895b1112e1c853f670e58372719c8441c5ed1c57ac2f7fad559d784f5f",
+  "seed": 42,
+  "outer_split": "70% development / 30% retrospective test",
+  "refit": "fit+tune only; calibration and policy remain separate",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "sklearn": "1.8.0",
+  "lightgbm": "4.6.0",
+  "partitions": [
+    {
+      "partition": "fit",
+      "n": 150679,
+      "positives": 12164,
+      "target_rate": 0.08072790501662475
+    },
+    {
+      "partition": "tune",
+      "n": 32289,
+      "positives": 2607,
+      "target_rate": 0.08073957075164917
+    },
+    {
+      "partition": "calibration",
+      "n": 16144,
+      "positives": 1303,
+      "target_rate": 0.08071110009910802
+    },
+    {
+      "partition": "policy",
+      "n": 16145,
+      "positives": 1303,
+      "target_rate": 0.08070610096004956
+    },
+    {
+      "partition": "test",
+      "n": 92254,
+      "positives": 7448,
+      "target_rate": 0.08073362672621241
+    }
+  ],
+  "known_limitation": "Prior V2 EDA inspected full data; no virgin external test"
+}

@@ -1,0 +1,12 @@
+{
+  "source_modules": 17,
+  "documented_typed_functions": 62,
+  "source_line_width_maximum": 88,
+  "strategy_counts_match_test": {
+    "surrogate_rules": 92254,
+    "A_conservative": 92254,
+    "B_balanced": 92254
+  },
+  "largest_file_bytes": 1791368,
+  "third_party_lint_status": "not executed in this environment"
+}

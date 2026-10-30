@@ -1,0 +1,38 @@
+{
+  "rows": 307511,
+  "raw_columns": 122,
+  "positives": 24825,
+  "target_rate": 0.08072881945686496,
+  "duplicate_ids": 0,
+  "employment_sentinel": 55374,
+  "max_income": 117000000.0,
+  "boundaries_fitted_on": "fit",
+  "boundaries": {
+    "EXT_SOURCE_2": [
+      0.39242482923398647,
+      0.6638086612487893
+    ],
+    "EMPLOYMENT_YEARS": [
+      2.099931553730322,
+      8.692676249144421
+    ],
+    "CREDIT_INCOME_RATIO": [
+      2.015259220231823,
+      5.1534
+    ]
+  },
+  "fit_rows": 150679,
+  "numeric_features_profiled": 116,
+  "candidate_signals": 6,
+  "ext2_missing": 0.0021462646864665006,
+  "ext3_missing": 0.19825307062186392,
+  "full_data_seen_previously": true,
+  "missing_historical_tables": [
+    "bureau.csv",
+    "bureau_balance.csv",
+    "previous_application.csv",
+    "POS_CASH_balance.csv",
+    "credit_card_balance.csv",
+    "installments_payments.csv"
+  ]
+}

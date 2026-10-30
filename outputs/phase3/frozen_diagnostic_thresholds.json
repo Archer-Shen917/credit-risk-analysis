@@ -1,0 +1,6 @@
+{
+  "WOE_Logistic": 0.08538180682767946,
+  "LGBM_Baseline": 0.08072835663989274,
+  "LGBM_Final_Raw": 0.08793749848494307,
+  "LGBM_Final_Calibrated": 0.0881330002791406
+}
