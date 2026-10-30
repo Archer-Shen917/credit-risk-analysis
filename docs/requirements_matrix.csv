@@ -1,0 +1,30 @@
+﻿阶段,要求,状态,证据路径,边界或解释
+反馈修订,替换双外部评分交叉主线,已实算,outputs/phase1/cross_business_fit.csv,EXT2 × 就业时长 × 贷款收入比；相关性与增量价值另外验证
+反馈修订,全部关键数值变量WOE/IV,已实算,outputs/phase1/numeric_woe_bins_fit.csv,拟合集确定分箱；不复用此前全样本WOE映射
+反馈修订,PDF报告与函数Args/Returns,已交付,reports/; src/credit_risk/,每个阶段独立报告；函数类型与文档自动检查
+第一阶段,多表关联与历史行为聚合,输入缺失，未实证完成,data/README.md,六张历史明细表未提供，不伪造历史逾期/额度使用率特征
+第二阶段,缺失分层、盖帽与异常标记,已实算,outputs/phase2/preprocessing_fit.csv,低缺失填充；中高缺失标记；训练分位数盖帽
+第二阶段,类别编码与WOE说明,已实算,outputs/phase2/encoding_imbalance_validation.csv,WOE逻辑回归、OneHot对照、LightGBM原生类别；不把无序类别编码解释为大小
+第二阶段,业务衍生特征体系,主表可支持项已实算,outputs/phase2/final_feature_manifest.json,仅收入、贷款、就业等主表衍生；不是完整历史特征体系
+第二阶段,证券资产/持仓/保证金特征,字段缺失，未实证完成,docs/人工复核与业务边界.md,真实账户资产波动、持仓集中度、维持担保比例不能计算
+第二阶段,方差/IV/相关性/VIF筛选,已实算,outputs/phase2/feature_screening.csv; vif_selected_fit.csv,筛选基于拟合集；LR和树模型采用不同适配策略
+第二阶段,7:3分层划分与逻辑回归,已实算,outputs/phase2/split_counts.csv; logistic_tuning.csv,70%开发集内额外分拟合、调参、校准、阈值四组
+第二阶段,LightGBM基线与统一指标,已实算,outputs/phase3/test_model_metrics.csv,AUC、KS、Gini、AP、Brier、精确率、召回率及混淆计数
+第二阶段,WOE系数/评分卡业务解释,已实算,outputs/phase2/logistic_coefficients.csv; logistic_scorecard.csv,分数为600分、PDO20、好坏比50:1的演示转换
+第三阶段,至少三轮迭代与调参记录,已实算,outputs/phase3/iteration_validation_metrics.csv,R0基线/R1八组网格/R2类别权重/R3交叉特征
+第三阶段,不平衡与阈值方案比较,已实算,outputs/phase2/encoding_imbalance_validation.csv,训练端SMOTE、类别权重；阈值只在策略集选择
+第三阶段,模型校准与验证稳定性,已实算，有边界,outputs/phase3/calibration_final.csv; development_cv.csv,后选择CV诊断与随机切分PSI不能替代跨时间/外部验证
+第三阶段,SHAP全局及高低风险各3例,已实算,outputs/phase3/shap_global_importance.csv; shap_force_*.png,共6例，校准logit下可加；不因果、不保证预测正确
+第三阶段,敏感属性偏差审计,已实算，未宣称合规通过,outputs/phase3/fairness_test_groups.csv,排除直接性别/年龄仍存在组间差异，需要机构审查
+第三阶段,两套三档风险阈值,已实算,outputs/phase3/frozen_policies.json; strategy_tiers_test.csv,低风险通过/中风险复核/高风险拒绝仅离线策略模拟
+第三阶段,旧规则与模型效果对比,代理规则仿真,outputs/phase3/strategy_test_metrics.csv,无机构原规则，使用明确自拟的surrogate；不是银行真实旧系统
+第三阶段,额度系数与人工复核清单,假设方案已交付,docs/人工复核与业务边界.md,低风险标准额度/复核70%仅情景假设；保证金等由实际制度确定
+第四阶段,收益、损失与效率评估,情景仿真已实算,outputs/phase4/economic_base_scenario.csv,TARGET→年度PD、LGD、资金成本、人工复核均显式假设
+第四阶段,敏感性与适用边界,已实算/已说明,outputs/phase4/economic_sensitivity.csv,243条情景；没有实际ROI、实际坏账下降或上线承诺
+第四阶段,落地可行性与里程碑,已交付,reports/phase4/第四阶段_价值评估与交付说明.pdf,数据许可、时间验证、代理偏差、影子试运行是前置条件
+第四阶段,技术文档与问题记录,已交付,docs/复现与问题登记.md; README.md,原数据不打包；固定种子、依赖、命令、数据校验及产物追踪
+第四阶段,不超过5页的结项总结,已交付，5页,reports/final/项目结项总结_5页.pdf,总结与阶段附件分开；本周不另写周报
+第四阶段,单页摘要与答辩准备,已交付,reports/final/项目核心摘要_1页.pdf; docs/答辩要点.md,覆盖业务问题、方法、真实指标、限制与后续条件
+工程,可运行代码、测试与模型文件,已运行；详见QA,outputs/qa/; models/model_bundle.joblib,模型文件只加载可信来源；仅供研究
+工程,Black/isort/flake8/mypy/pylint,提供配置，当前环境未执行,requirements-dev.txt; .github/workflows/tooling.yml,离线环境缺少这些工具；不得将内置检查等同其通过
+验收,达到行业通用基准与监管合规,来源未给数值门槛，未认证,reports/final/项目结项总结_5页.pdf,实测AUC约0.7336，不套用预设0.78；不虚构行业门槛或监管审批
